@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost/rmaja85</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="data/model/Language.hbm.xml"/>
+    <mapping resource="data/model/Translation.hbm.xml"/>
+    <mapping resource="data/model/UserCreatesTrAccep.hbm.xml"/>
+    <mapping resource="data/model/Acceptation.hbm.xml"/>
+    <mapping resource="data/model/WordLanguage.hbm.xml"/>
+    <mapping resource="data/model/AccessKey.hbm.xml"/>
+    <mapping resource="data/model/TranslationContext.hbm.xml"/>
+    <mapping resource="data/model/Report.hbm.xml"/>
+    <mapping resource="data/model/Unsuscribed.hbm.xml"/>
+    <mapping resource="data/model/Role.hbm.xml"/>
+    <mapping resource="data/model/Word.hbm.xml"/>
+    <mapping resource="data/model/Phrase.hbm.xml"/>
+    <mapping resource="data/model/UserHasTranslation.hbm.xml"/>
+    <mapping resource="data/model/User.hbm.xml"/>
+    <mapping resource="data/model/Wla.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

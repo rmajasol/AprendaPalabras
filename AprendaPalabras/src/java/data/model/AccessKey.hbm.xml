@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-jun-2012 14:23:10 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="data.model.AccessKey" table="AccessKey" catalog="rmaja85">
+        <id name="userId" type="int">
+            <column name="User_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="accessKey" type="string">
+            <column name="accessKey" length="80" not-null="true" unique="true" />
+        </property>
+    </class>
+</hibernate-mapping>

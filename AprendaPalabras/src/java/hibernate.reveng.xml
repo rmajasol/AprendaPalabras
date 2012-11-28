@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="rmaja85"/>
+  <table-filter match-name="Acceptation"/>
+  <table-filter match-name="UserHasTranslation"/>
+  <table-filter match-name="WordLanguage"/>
+  <table-filter match-name="Phrase"/>
+  <table-filter match-name="Report"/>
+  <table-filter match-name="Word"/>
+  <table-filter match-name="AccessKey"/>
+  <table-filter match-name="TranslationContext"/>
+  <table-filter match-name="Unsuscribed"/>
+  <table-filter match-name="Translation"/>
+  <table-filter match-name="UserCreatesTrAccep"/>
+  <table-filter match-name="WLA"/>
+  <table-filter match-name="Language"/>
+  <table-filter match-name="User"/>
+  <table-filter match-name="Role"/>
+</hibernate-reverse-engineering>

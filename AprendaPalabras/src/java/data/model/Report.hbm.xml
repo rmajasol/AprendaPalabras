@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-jun-2012 14:23:10 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="data.model.Report" table="Report" catalog="rmaja85">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="translationId" type="java.lang.Integer">
+            <column name="Translation_id" />
+        </property>
+        <property name="translationContextId" type="java.lang.Integer">
+            <column name="TranslationContext_id" />
+        </property>
+        <property name="userCreatesTrAccepId" type="java.lang.Integer">
+            <column name="UserCreatesTrAccep_id" />
+        </property>
+        <property name="userId" type="int">
+            <column name="User_id" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

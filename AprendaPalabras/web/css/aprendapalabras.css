@@ -1,0 +1,546 @@
+/* 
+    Document   : aprendapalabras
+    Created on : 03-abr-2012, 19:01:51
+    Author     : yomac
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto;
+    background: #aaa;
+    min-width: 400px;
+    max-width: 850px;
+}
+
+#main { 
+    background: #eee }
+
+#header {
+    height: auto;
+    background: #aaa
+}
+
+#logo {
+    height: 155px;
+    width: 155px;
+    float: left;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#logoText {
+    float: left;
+    margin: 20px 0 0 70px;
+    /*     font styles apply to text within alt tags */
+    font-family: 'American Typewriter', Courier, monospace;
+    font-size: 50px;
+    color: #333;
+}
+
+#widgetBar {
+    height: 50px;
+    width: 850px;
+    float: right;
+    background: #ccc;
+}
+
+.headerWidget {
+    width: 194px;
+    margin: 20px 2px;
+    font-size: small;
+    float: right;
+    line-height: 25px;
+    background: #aaa;
+}
+
+#form .submitButton{
+    clear: both;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 25px
+}
+
+.right{
+    text-align: right;
+}
+
+#content {
+    height: auto;
+    width: 850px;
+    float: left;
+    background: #ccc;
+    padding-bottom: 15px
+}
+
+#footer {
+    height: 20px;
+    clear: left;
+    background: #aaa;
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 35px;
+    font-style: italic;
+    color: #333;
+    border: solid 1px #ccc
+}
+
+/* CAJA DE FORMULARIO */
+#form{
+    display: inline-block;
+    margin: auto;
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+    clear: both;
+}
+#form label{
+    display: block; 
+    font-weight: bold;
+    text-align: left;
+}
+#form div{
+    margin-bottom: 4px;
+    text-align: left;
+}
+#form .fieldError{
+    background: #FFC9C9;
+    padding: 7px 7px 1px;
+}
+/*#form .errorBlockFields input[type='text'],input[type='password']{
+    box-shadow:0 0 0 3px #FFC9C9;
+}*/
+#form input[type='text'],input[type='password']{
+    padding: 5px;
+    width: 120px;
+    /*    border: 1px solid #CED5D7;*/
+    resize: none;
+    /*    box-shadow:0 0 0 3px #EEF5F7;*/
+    margin: 5px 2px 2px;
+}
+#form input[name='email'], input[name='email2']{
+    width: 200px !important;
+}
+#form .languageSelection{
+    float: left
+}
+#form #invertSelButton{
+    float: left;
+    margin: 16px 5px auto;
+}
+
+#form input[name='typed_from'],input[name='typed_to']{
+    width: 75px !important;
+}
+#form input[name='word_from'],input[name='word_to']{
+    width: 100px !important;
+}
+#form .wordField_long input{
+    width: 250px !important;
+}
+#form .accep_long input[name='acceptation']{
+    width: 200px !important;
+}
+#form input[name='acceptation'], input[name='accep_from'],input[name='accep_to']{
+    width: 120px !important;
+}
+.untypedText{
+    color: gray;
+}
+.typedText{
+    color: black;
+}
+#form input[type='text']:focus,input[type='password']:focus{
+    outline: none;
+    box-shadow:0 0 0 3px #dde9ec;
+}
+#form input[type='submit']{
+    margin-left: 20px;
+    border: 1px solid #CED5D7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+
+    background: #e4f1f6; 
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%); 
+}
+#form input[type='submit']:hover{
+    background: #edfcff; 
+    background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%); 
+}
+#form input[type='submit']:active{
+    background: #cfe6ef; 
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+#form .recaptcha{
+    float:left;
+}
+
+#form .fieldErrorMsg{
+    font-size: 0.8em;
+    color: #BC1010;
+    font-weight: bold;
+    text-align: center;
+    margin: 2px auto;
+    /*    margin-left: 10px;
+        margin-top: 2px;
+        padding: 6px 12px;
+        position: absolute;*/
+    /*    max-width: 220px;*/
+}
+/*#form .fieldErrorMsg{
+    background-color: #BC1010;
+    font-size: 0.8em;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 2px;
+    padding: 6px 12px;
+    position: absolute;
+    max-width: 220px;
+}*/
+/*#form .fieldErrorMsg:before{
+    border-color: transparent #BC1010 transparent transparent;
+    border-style: solid;
+    border-width: 6px 8px;
+    content: "";
+    display: block;
+    height: 0px;
+    left: -16px;
+    position: absolute;
+    top: 8px;
+    width: 0;
+}*/
+/*#form .fieldErrorMsg.fieldRep{
+    margin-top: -20px;
+    margin-left: 16px;
+}
+#form .fieldErrorMsg.fieldLang{
+    margin-top: -20px;
+    margin-left: 16px;
+}*/
+/*#form .fieldErrorMsg.chooselang{
+    margin-top: -20px;
+}*/
+
+.infoBox{
+    font-weight: bold;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px auto 0px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 50%;
+}
+.infoBox.result_fail{
+    background: none repeat scroll 0 0 #BC1010;
+    color: white;
+}
+.infoBox.result_ok{
+    background: none repeat scroll 0 0 #1EA700;
+    color: white;
+}
+.infoBox.info{
+    background: none repeat scroll 0 0 whitesmoke;
+    color: #333;
+}
+.infoBox.description{
+    background: none repeat scroll 0 0 gray;
+    color: #333;
+}
+.checkbox{
+    display: inline-block;
+    margin: 0px 75px 10px 0px
+}
+.infoIcon{
+}
+
+
+
+#form.login{
+    width: 250px;
+}
+#logicErrorBox{
+    padding: 10px;
+    border-style: solid;
+    border-color: #BC1010;
+    vertical-align: middle;
+    text-align: center;
+    background: lightpink;
+    margin: 10px 15px;
+}
+
+#logicErrorBox .title{
+    color: firebrick;
+}
+#logicErrorBox .descr{
+    color: red;
+}
+
+#translationSelection #word{
+    float: left
+}
+
+#translationSelection input[type='text'].word{
+    width: 250px
+}
+
+#translationSelection #selector{
+    clear: both;
+}
+
+#searchField{
+    width: 200px
+}
+
+#resultBox{
+    width: 400px;
+    margin: 10px auto;
+    padding: 7px;
+}
+
+#resultBox .translation{
+    border: solid #9A9A9A;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: 5px auto;
+    margin-bottom: 20px;
+    background: #A1C1D9;
+    padding: 5px 7px;
+}
+
+#resultBox .translation.added{
+    background: darkseagreen
+}
+
+#resultBox .addedCounter{
+    margin: 5px auto;
+}
+
+#resultBox .acceptation{
+    font-size: 0.8em;
+}
+
+#resultBox .word{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 7px auto 0px
+}
+
+#resultBox .word_info{
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 4px
+}
+
+#resultBox .word_info div{
+    margin-top: 4px
+}
+
+
+#resultBox .translation .action{
+    text-align: right;
+    margin-top: 15px
+}
+
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+
+table.sortable th{
+    padding: 5px
+}
+
+table.sortable tr.learned{
+    background: darkseagreen !important
+}
+
+table.sortable tr.editing{
+    background: burlywood !important
+}
+
+table.sortable .acceptation{
+    font-size: 0.75em
+}
+
+table.sortable td .word{
+    font-weight: bold;
+}
+
+table.sortable{
+    margin: 10px auto;
+    padding: 3px;
+}
+
+table.sortable td{
+    padding: 3px;
+    text-align: left
+}
+
+table.sortable tr:hover{
+    background: white
+}
+
+table.sortable td.mark{
+    text-align: center
+}
+.block{
+    margin: 10px auto
+}
+
+.floating{
+    float: left;
+    margin-left: 5px
+}
+.clear{
+    clear: both
+}
+.langSelectors{
+    display: inline-block
+}
+
+.center{
+    text-align: center
+}
+
+#form.config div{
+    margin-bottom: 15px !important
+}
+
+#form div.formSection{
+    margin: 5px;
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 3px;
+}
+#form div.formSection div{
+    margin: 7px !important
+}
+
+#form textarea[name='context_from'], textarea[name='context_to']{
+    width:280px;
+    height:50px;
+    margin-bottom: 10px;
+}
+
+.contextList{
+    margin: 10px auto
+}
+
+.context{
+    background: #CBE3EE;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 7px;
+    text-align: center
+}
+
+.context.reported{
+    background: burlywood
+}
+
+.phrase{
+    padding-bottom: 5px
+}
+
+#resultBox .contextAction{
+    margin-bottom: 7px !important;
+    margin-top: 5px
+}
+
+#resultBox .contextAction a{
+    margin: 0px 3px
+}
+
+.reportContext{
+    position: relative;
+    left: 135px;
+    bottom: 25px;
+    margin-bottom: -24px !important
+}
+
+#resultBox .context_info{
+    font-size: 0.7em;
+    margin-top: 4px
+}
+
+
+
+tr.colspanAll td, tr:hover.colspanAll{
+    text-align: center !important;
+    background: transparent !important
+}
+
+#resultBox .buttonsBox{
+    text-align: center;
+}
+
+#resultBox a{
+    display: inline-block;
+    padding: 4px 12px;
+    background: #ECEFF6;
+    color: #333;
+    border-radius: 4px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#resultBox a:hover{
+    background: #D0D7E7;
+}
+
+#resultBox .buttonsBox{
+    text-align: center;
+    margin-top: 7px
+}
+
+#resultBox .buttonsBox ul{
+    display: inline-block;
+    margin: 0 0;
+    padding: 0 0 
+}
+
+#resultBox .buttonsBox li{
+    display: inline;
+    float: left;
+    list-style:none;
+    margin: 0 5px
+}
+
+
+
+.littleFont{
+    font-size: 0.8em
+}
+
+#resultBox .addTr{
+    position: relative;
+    bottom:70px;
+    left:35px
+}
+
+#resultBox .reportedCounter{
+    font-weight: bold
+}
+
+
